@@ -14,22 +14,42 @@
     />
     <!-- TAILWIND CSS -->
     
-    <script type="module" crossorigin src="/assets/index-a8b4ef2a.js"></script>
-    <link rel="stylesheet" href="/assets/index-06e3b18a.css">
+    <script type="module" crossorigin src="/assets/index-39a3d17e.js"></script>
+    <link rel="stylesheet" href="/assets/index-32261bff.css">
   </head>
+  <!-- toggle // overflow-hidden when opening  the nav menu -->
   <body class="bg-body-color font-poppins py-5 px-8">
     <!-- HEADER -->
     <header class="flex justify-between items-center">
-      <h2 class="text-white font-poppins text-2xl font-semibold">
+      <h2 class="text-white font-poppins text-2xl font-semibol d">
         Send<span class="text-primary-color">Crypt</span>
       </h2>
-      <div class="flex flex-col gap-2 items-center">
-        <span class="w-8 bg-white h-0.5 rounded-sm"></span>
-        <span class="w-8 bg-white h-0.5 rounded-sm"></span>
-        <span class="w-8 bg-white h-0.5 rounded-sm"></span>
+      <div
+        class="flex flex-col gap-2 items-center cursor-pointer transition-all duration-500"
+        id="hamburger-icon"
+      >
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYEAQAAAAa7ikwAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAACYktHRAAAqo0jMgAAAAlwSFlzAAAAYAAAAGAA8GtCzwAAAAd0SU1FB+cJExQ3MVLfsDgAAACOSURBVEjH7ZWxDYQwFEPfP12HxBpQsAg0YSEWYJlUmSQVY2QBfAUZIR9xEm8A27JkGf4dk0KAZfGRT8mkUqDvfQxK+cK+o3XFzJpqS8Ji9An+8ihM6joYx/bSEhyHSTnDNPnkz/lzOXlxnrWiYYDGQ6sV+YV/eQwmbRuE4CMfo/vh1MucZ5cdKCWf4HfyA0etOcbtUL7cAAAAAElFTkSuQmCC"
+          class="w-6 h-6 hamburger-icon"
+          alt=""
+        />
       </div>
     </header>
+    <!-- MOBILE NAVIGATION -->
+    <div
+      class="flex flex-col gap-6 mt-20 bg-body-color translate-x-[110%] transition-all duration-1000 mobile-drawer invisible opacity-0 h-0"
+    >
+      <div class="bg-primary-color rounded-lg">
+        <a
+          href="#"
+          class="text-2xl font-medium text-black inline-block py-2 px-5"
+          >Markets</a
+        >
+      </div>
 
+      <a href="#" class="text-2xl font-medium text-white w-full">Portofolio</a>
+      <a href="#" class="text-2xl font-medium text-white w-full">Products</a>
+    </div>
     <!-- HERO SECTION -->
     <section class="mt-8 flex items-center justify-center flex-col">
       <img src="/assets/hero-img-ad61129a.png" alt="" />
